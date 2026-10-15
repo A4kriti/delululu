@@ -1,0 +1,18 @@
+[
+  {
+    "id": "c49252c5-f19f-43b0-a7fc-b1a2d60692f1",
+    "name": "Aakriti Bastola",
+    "email": "kritibastola789@gmail.com",
+    "role": "writer",
+    "passwordHash": "8b7ae91ce7c618268f1d4858e2de8c02:7cea9c024d981ced4d06d0c6f7f006b30a1e86442b1d61e78eee93e02870fe2c86bde6a42ef37fce29da7604dfc3fb70a293a36184f03e0f6fc3ad8abecbf3a8"
+  },
+  {
+    "id": "0c3603e2-3e0c-4cd3-b340-08371f85dac1",
+    "name": "bye",
+    "email": "lkjh@gmail.com",
+    "role": "writer",
+    "passwordHash": "58804abdeb918720ca89efb29cbea5f7:c1f2aca6a4ef2c37f7f96c50d11ccb9856adcbee49614cb7b91aa663fa7bc2e1e6632a2b2dea963f543fc4f66aefa014d48aebd3121dfea2fb89238d3b2f2cb0",
+    "bio": "Heyyy",
+    "avatar": "https://4wcc5lw32o.ucarecd.net/5e4ef0a2-3f9a-4167-986f-2720fa65c17d/-/crop/675x675/263,0/-/preview/-/scale_crop/256x256/center/"
+  }
+]

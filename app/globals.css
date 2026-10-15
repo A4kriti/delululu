@@ -1,8 +1,17 @@
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffdf7;
+  --foreground: #4a2638;
+
+  /* Notebook theme */
+  --notebook-paper: #fffdf7;
+  --notebook-pink: #fce7f3;
+  --notebook-border: #f9a8d4;
+  --notebook-icon: #9d6480;
+  --notebook-active: #be185d;
+  --notebook-hover: #fbcfe8;
 }
 
 @theme inline {
@@ -12,15 +21,49 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sidebar background */
+.sidebar {
+  background: var(--notebook-paper);
+  border-color: var(--notebook-border);
+}
+
+/* All sidebar icons */
+.sidebar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  color: var(--notebook-icon);
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    transform 200ms ease;
+}
+
+/* Hover effect */
+.sidebar-icon:hover {
+  background: var(--notebook-hover);
+  color: var(--notebook-active);
+}
+
+/* Active sidebar icon */
+.sidebar-icon-active {
+  background: var(--notebook-pink);
+  color: var(--notebook-active);
+  border: 1px solid var(--notebook-border);
+  box-shadow: 0 2px 5px rgb(190 24 93 / 10%);
+}
+
+/* Keyboard accessibility */
+.sidebar-icon:focus-visible {
+  outline: 2px solid var(--notebook-active);
+  outline-offset: 3px;
 }
